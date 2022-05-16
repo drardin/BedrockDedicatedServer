@@ -6,7 +6,7 @@ date=$(date +%Y.%m.%d)
 #Set installation path
 until [ -d "$InstallDir" ]
 do
-  read -p 'Installation Path: ' InstallDir
+  read -p 'Installation Path: ' InstallDir < /dev/tty
   InstallDir=$(eval echo "$InstallDir")
     if [ ! -d "$InstallDir" ]; then
       echo "Specified path does not exist, try again"
