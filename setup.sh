@@ -29,22 +29,22 @@ fi
 
 #Check if server root directory has an existing install
 if [ -f "bedrock_server" ]; then
-  echo "An existing install was found!"
-  sleep 2
-  echo "Creating Backup..."
-  cd $InstallDir
-  tar -zcvf existinginstall-$date.tar.gz BDS/
-  rm -r BDS/
-  mkdir BDS/
-  sleep 2
-  echo "Creating backup directory"
-  mkdir BDS/Backups/
-  mv existinginstall-$date.tar.gz $InstallDir/BDS/Backups/
-  cd BDS/
-  echo "Backup created and saved to $InstallDir/BDS/Backups/"
-else
-  echo "An existing server directory was found!"
-  sleep 2
-  echo "Existing installation is corrupt. Install exiting..."
-  exit 1
+    echo "An existing install was found!"
+	sleep 2
+    echo "Creating Backup..."
+    cd $InstallDir
+    tar -zcvf existinginstall-$date.tar.gz BDS/
+    rm -r BDS/
+    mkdir BDS/
+	sleep 2
+	echo "Creating backup directory"
+    mkdir BDS/Backups/
+    mv existinginstall-$date.tar.gz $InstallDir/BDS/Backups/
+    cd BDS/
+    echo "Backup created and saved to $InstallDir/BDS/Backups/"
+  else
+    echo "An existing server directory was found!"
+	sleep 2
+	echo "Existing installation is corrupt. Install exiting..."
+	exit 1
 fi
