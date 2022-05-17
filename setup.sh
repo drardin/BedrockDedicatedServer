@@ -48,3 +48,19 @@ if [ -f "bedrock_server" ]; then
 	echo "Existing installation is corrupt. Install exiting..."
 	exit 1
 fi
+
+# NEED UNZIP DEPENDENCY !!!
+
+# NEED DYNAMIC DOWNLOAD LINK LOGIC !!!
+
+#Download Minecraft Bedrock Dedicated Server from Microsoft
+echo "Creating download directory"
+mkdir $InstallDir/BDS/Downloads/
+cd $InstallDir/BDS/Downloads/
+echo "Downloading Minecraft Bedrock Dedicated Server from Microsoft"
+wget https://minecraft.azureedge.net/bin-linux/bedrock-server-1.18.33.02.zip
+echo "Installing to installation directory"
+unzip bedrock-server*.zip -d $InstallDir/BDS/
+echo "Purging downloads"
+rm bedrock-server*.zip
+echo "Test"
