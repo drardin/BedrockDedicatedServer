@@ -42,11 +42,6 @@ if [ -f "bedrock_server" ]; then
     mv existinginstall-$date.tar.gz $InstallDir/BDS/Backups/
     cd BDS/
     echo "Backup created and saved to $InstallDir/BDS/Backups/"
-  else
-    echo "An existing server directory was found!"
-	sleep 2
-	echo "Existing installation is corrupt. Install exiting..."
-	exit 1
 fi
 
 # NEED UNZIP DEPENDENCY !!!
