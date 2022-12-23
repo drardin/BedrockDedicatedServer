@@ -7,7 +7,7 @@ The scope of this project is to develop some utilities that can be used to expan
 The following command downloads this repo's main installer script and executes it in Bash. This is intended to be the only command needed for using this project on any installation of Linux. The current focus is Debian based distributions of Linux but am looking to containerize this project for use on other systems, including ARM (a large focus of mine)
 
 ## Main Install Script
-**(NOT UPDATED) curl https://raw.githubusercontent.com/drardin/BedrockDedicatedServer/main/setup.sh | bash (NOT UPDATED)**
+**(NOT UPDATED)** `curl https://raw.githubusercontent.com/drardin/BedrockDedicatedServer/main/setup.sh | bash`
 
 ## Project Focus
 Currently working on writing a package installer, package update utility, package backup and migration utility.
